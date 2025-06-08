@@ -1,14 +1,19 @@
 package ph.authentication_service.user.service;
 
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import ph.authentication_service.authentication.model.LoginRequest;
 import ph.authentication_service.user.model.User;
 import ph.authentication_service.user.repository.UserRepository;
 
 @Service
+@RequiredArgsConstructor
 public class UserService {
 
-    private UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
+    private final UserRepository userRepository;
 
     public String userRegistration(User user) {
 
@@ -17,10 +22,10 @@ public class UserService {
         return "heh";
     }
 
-
-    private boolean userExists(String username) {
+    public boolean userExists(String username) {
         return userRepository.existsByUsername(username);
     }
+
 
 
 }
