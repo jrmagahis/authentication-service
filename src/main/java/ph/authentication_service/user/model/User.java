@@ -15,9 +15,10 @@ public class User {
     @Id
     private long id;
 
-    private String username;
+    private String userName;
 
     private String password;
 
+    private boolean isActive;
 
 }

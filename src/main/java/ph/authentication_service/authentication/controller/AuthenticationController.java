@@ -8,24 +8,24 @@ import ph.authentication_service.authentication.model.LoginRequest;
 import ph.authentication_service.user.model.User;
 import ph.authentication_service.user.service.UserService;
 
+import java.util.Optional;
+
 @RestController
 @RequiredArgsConstructor
 public class AuthenticationController {
 
-    private final UserService userService;
+//    private final UserService userService;
+
 
     @PostMapping("login")
-    private String login(@RequestBody LoginRequest loginRequest) {
-
-
-
-
+    public String login(@RequestBody LoginRequest loginRequest) {
+//        Optional<User> user = userService.findUser(loginRequest.getUsername());
         return "success!";
 
     }
 
-    @PostMapping("/register")
-    private String register(@RequestBody User user) {
+    @PostMapping("register")
+    public String register(@RequestBody User user) {
         return null;
     }
 

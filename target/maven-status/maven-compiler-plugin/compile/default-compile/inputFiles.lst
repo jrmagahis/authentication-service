@@ -1,6 +1,9 @@
+C:\Dev\playground\authentication-service\src\main\java\ph\authentication_service\authentication\controller\AuthenticationController.java
+C:\Dev\playground\authentication-service\src\main\java\ph\authentication_service\authentication\model\LoginRequest.java
+C:\Dev\playground\authentication-service\src\main\java\ph\authentication_service\authentication\service\AuthenticationService.java
 C:\Dev\playground\authentication-service\src\main\java\ph\authentication_service\AuthenticationServiceApplication.java
 C:\Dev\playground\authentication-service\src\main\java\ph\authentication_service\security\jwt\JwtUtil.java
-C:\Dev\playground\authentication-service\src\main\java\ph\authentication_service\user\controller\UserController.java
+C:\Dev\playground\authentication-service\src\main\java\ph\authentication_service\security\PasswordsUtil.java
 C:\Dev\playground\authentication-service\src\main\java\ph\authentication_service\user\model\User.java
 C:\Dev\playground\authentication-service\src\main\java\ph\authentication_service\user\repository\UserRepository.java
 C:\Dev\playground\authentication-service\src\main\java\ph\authentication_service\user\service\UserService.java

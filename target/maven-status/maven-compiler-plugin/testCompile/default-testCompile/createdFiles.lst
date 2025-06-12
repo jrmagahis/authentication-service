@@ -1,1 +1,3 @@
+ph\authentication_service\authentication\service\AuthenticationServiceTest.class
 ph\authentication_service\AuthenticationServiceApplicationTests.class
+ph\authentication_service\user\service\UserServiceTest.class

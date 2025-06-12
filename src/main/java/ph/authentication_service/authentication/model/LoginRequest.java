@@ -1,13 +1,15 @@
 package ph.authentication_service.authentication.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 public class LoginRequest {
 
-    private String username;
+    private String userName;
+
     private String password;
 
 }
