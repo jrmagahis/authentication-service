@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import ph.authentication_service.authentication.model.LoginRequest;
 import ph.authentication_service.user.model.User;
-import ph.authentication_service.user.service.UserService;
 
 import java.util.Optional;
 

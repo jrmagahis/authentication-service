@@ -2,9 +2,10 @@ spring:
   application:
     name: authentication-service
   datasource:
-    url: jdbc:postgresqljrm-db-1.cly0ayca2mpe.ap-southeast-2.rds.amazonaws.com:5432/jrm-db-1
-    username:
-    password:
+    ## todo: credentials should be stored somewhere
+    url: jdbc:postgresql://jrm-dev-db-1.cly0ayca2mpe.ap-southeast-2.rds.amazonaws.com:5432/postgres
+    username: master
+    password: 'master69'
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -12,6 +13,3 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-
-  server:
-    port: 8080

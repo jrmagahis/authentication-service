@@ -7,3 +7,4 @@ ph\authentication_service\AuthenticationServiceApplication.class
 ph\authentication_service\user\model\User.class
 ph\authentication_service\authentication\model\LoginRequest.class
 ph\authentication_service\security\jwt\JwtUtil.class
+ph\authentication_service\user\api\UserController.class

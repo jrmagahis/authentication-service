@@ -1,8 +1,9 @@
 package ph.authentication_service.user.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.*;
-import org.springframework.data.annotation.Id;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -10,6 +11,7 @@ import org.springframework.data.annotation.Id;
 @Setter
 @Data
 @Entity
+@Table(name = "\"USER\"")
 public class User {
 
     @Id

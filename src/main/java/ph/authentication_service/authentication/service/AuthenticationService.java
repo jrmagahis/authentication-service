@@ -1,19 +1,19 @@
 package ph.authentication_service.authentication.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import ph.authentication_service.authentication.model.LoginRequest;
-import ph.authentication_service.security.PasswordsUtil;
 import ph.authentication_service.user.model.User;
 import ph.authentication_service.user.service.UserService;
 
 import java.util.Optional;
 
-@Service
 @RequiredArgsConstructor
+@Service
 public class AuthenticationService {
     private final UserService userService;
-    private final PasswordsUtil passwordUtil;
+    private final PasswordEncoder passwordEncoder;
 
     public boolean login(LoginRequest loginRequest) throws Exception {
 
@@ -24,7 +24,7 @@ public class AuthenticationService {
             throw new Exception("User is not active");
         }
 
-        if (!passwordUtil.isPasswordMatch(user.getPassword(), loginRequest.getPassword())) {
+        if (!passwordEncoder.matches(user.getPassword(), loginRequest.getPassword())) {
             throw new Exception("Username or Password is incorrect");
         }
 
